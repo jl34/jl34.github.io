@@ -1,0 +1,94 @@
+import Head from 'next/head';
+import { Box, Container, Grid, Typography, Card, Icon, Menu, MenutItem } from '@mui/material';
+import { AccountDash } from '../components/account/account-dashboard';
+import { AccountDash2 } from '../components/account/account-dashboard2';
+import { AccountDash3 } from '../components/account/account-dashboard3';
+import { Todo1 } from '../components/account/account-todo';
+import { DashboardLayout } from '../components/dashboard-layout';
+import AccountProgress from 'src/components/account/account-progress';
+import { AccountProgress1 } from '../components/account/account-progress1';
+import BasicTable from 'src/components/account/account-projects'; 
+
+
+const Dashboard = () => (
+
+  <>
+    <Head>
+      <title>
+        My Workspace
+      </title>
+    </Head>
+    <Box
+      component="main"
+      sx={{
+        flexGrow: 1,
+        py: 8
+      }}
+    >
+      <Container maxWidth={false}>
+        <Typography
+          sx={{ mb: 3 }}
+          variant="h4"
+        >
+          My Workspace
+        </Typography>
+
+        <Grid container spacing={2}>
+         <Grid
+            item
+            lg={3}
+            sm={6}
+            xl={3}
+            xs={12}
+          >
+          <AccountDash />
+          </Grid>
+          <Grid
+            item
+            lg={3}
+            sm={6}
+            xl={3}
+            xs={12}
+          >
+          <AccountDash2 />
+          </Grid>
+          <Grid
+            item
+            lg={3}
+            sm={6}
+            xl={3}
+            xs={12}
+          >
+          <AccountDash3 />
+          </Grid>
+
+          <Grid item lg={6} xl={9}>
+          <BasicTable />
+            <div style={{padding: 8}}></div>
+          </Grid>
+            <div style={{padding: 8}}></div>
+            
+          <AccountProgress />
+            <div style={{padding: 8}}></div>
+          <Typography
+          color="textSecondary" gutterBottom variant="overline" >
+            REMINDERS
+          </Typography>
+          <div style={{padding: 5}}></div>
+
+        <Todo1 />
+          <div style={{padding: 8}}></div>
+
+        </Grid>
+      </Container>
+    </Box>
+  </>
+);
+
+Dashboard.getLayout = (page) => (
+  <DashboardLayout>
+    {page}
+  </DashboardLayout>
+);
+
+export default Dashboard;
