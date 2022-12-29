@@ -48,7 +48,7 @@ export default function AccountProgress() {
   };
 
   return (
-    <Box sx={{ maxWidth: 300 }}>
+    <Box sx={{ height: 450, maxWidth: 390, bgcolor: 'background.paper', boxShadow: 1, borderRadius: 2, p: 3, pt: 1}}>
      <Typography
         color="textSecondary"
         gutterBottom variant="overline" >

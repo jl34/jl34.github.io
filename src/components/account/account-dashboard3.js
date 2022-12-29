@@ -26,7 +26,7 @@ export const AccountDash3 = (props) => (
             color="textPrimary"
             variant="h4"
           >
-            8
+            6
           </Typography>
         </Grid>
         <Grid item>
