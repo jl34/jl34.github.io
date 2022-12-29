@@ -35,7 +35,7 @@ const items = [
   {
     href: '/customers',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Network Strategic Planners'
+    title: 'My Team'
   },
   {
     href: '/products',
