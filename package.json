@@ -1,9 +1,9 @@
 {
-  "name": "project",
+  "name": "front end",
   "author": "jl34",
   "licence": "MIT",
   "version": "2.0.0",
-  "homepage": "https://jl34.github.io/project",
+  "homepage": "https://jl34.github.io/jl34.github.io",
   "private": false,
   "scripts": {
     "dev": "next",
@@ -57,6 +57,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jl34/project.git"
+    "url": "git+https://github.com/jl34/jl34.github.io.git"
   }
 }
