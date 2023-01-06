@@ -1,5 +1,6 @@
 {
   "name": "front end",
+  "source": "src/index.html",
   "author": "jl34",
   "licence": "MIT",
   "version": "2.0.0",
